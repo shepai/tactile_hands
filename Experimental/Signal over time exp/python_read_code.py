@@ -4,10 +4,10 @@ import csv
 from datetime import datetime
 
 # === USER SETTINGS ===
-PORT = "/dev/ttyACM1"        # Change this to your Arduino port, e.g. "/dev/ttyUSB0" on Linux
+PORT = "/dev/ttyACM0"        # Change this to your Arduino port, e.g. "/dev/ttyUSB0" on Linux
 BAUD = 9600
 DURATION = 600        # seconds (10 minutes)
-OUTPUT_FILE = "/its/home/drs25/Documents/GitHub/tactile_hands/Experimental/data/capnuf/ads7830_rubber_150g.csv"
+OUTPUT_FILE = "/its/home/drs25/Documents/GitHub/tactile_hands/Experimental/data/purchased/ads7830_rubber_50g.csv"
 
 # === SETUP SERIAL ===
 ser = serial.Serial(PORT, BAUD, timeout=1)
